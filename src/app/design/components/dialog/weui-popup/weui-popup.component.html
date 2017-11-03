@@ -1,0 +1,4 @@
+<div class="vux-popup-dialog vux-popup-bottom " [class.vux-popup-show]="widget.shown">
+    <free-widget [widget]="widget" *ngFor="let widget of widget?.children"></free-widget>
+</div>
+<a class="vux-popup-mask vux-popup-show" *ngIf="widget.shown" (click)="widget.shown = !widget.shown" href="javascript:void(0)" style="z-index: 500;"></a>

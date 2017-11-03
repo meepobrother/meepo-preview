@@ -1,0 +1,27 @@
+.meepo-item {
+    width: 100px;
+    height: 26px;
+    line-height: 26px;
+    text-align: center;
+    border-radius: 3px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    margin-right: 6px;
+    &.meepo-item-selected {
+        background: #ffffff url("./active.png") no-repeat right bottom;
+        border-color: #ff4a00;
+    }
+}
+
+.vux-checker-item {
+    display: inline-block;
+}
+
+.vux-tap-active {
+    tap-highlight-color: rgba(0, 0, 0, 0);
+    user-select: none;
+}
+
+.vux-tap-active:active {
+    background-color: #ECECEC;
+}
