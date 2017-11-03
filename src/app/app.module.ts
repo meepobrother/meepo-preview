@@ -4,6 +4,7 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { DesignModule } from './design/design.module';
 
+import { ApiService, SysinfoService } from './services';
 @NgModule({
   declarations: [
     AppComponent
@@ -12,7 +13,10 @@ import { DesignModule } from './design/design.module';
     BrowserModule,
     DesignModule
   ],
-  providers: [],
+  providers: [
+    ApiService,
+    SysinfoService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
