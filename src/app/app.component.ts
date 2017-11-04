@@ -5,6 +5,9 @@ import * as _ from 'underscore';
 import { MODELS } from './design/models';
 import { VIEWSCOMPONENTS } from './design/components';
 
+import * as libs from './libs';
+
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -14,6 +17,11 @@ export class AppComponent implements OnInit {
   title = '杭州米波网络科技有限公司，合作邮箱： 1037483576@qq.com, 杨明明，合作电话： 13140415408';
 
   widgets: any[] = [];
+
+  constructor() {
+    console.log(libs);
+  }
+
   ngOnInit() {
     console.log(this.title);
     this.widgets = [];

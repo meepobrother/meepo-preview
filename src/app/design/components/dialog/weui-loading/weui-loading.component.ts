@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { WeuiLoadingDefault } from '../../../models';
 
 @Component({
   selector: 'weui-loading',
@@ -6,10 +7,11 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./weui-loading.component.scss']
 })
 export class WeuiLoadingComponent implements OnInit {
-
+  @Input() widget: WeuiLoadingDefault = new WeuiLoadingDefault();
   constructor() { }
 
   ngOnInit() {
   }
 
 }
+

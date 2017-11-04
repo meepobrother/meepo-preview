@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 
 @Component({
   selector: 'weui-action-sheet',
@@ -6,7 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./weui-action-sheet.component.scss']
 })
 export class WeuiActionSheetComponent implements OnInit {
-
+  @Input() widget: any;
   constructor() { }
 
   ngOnInit() {

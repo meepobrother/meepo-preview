@@ -1,3 +1,6 @@
-<p>
-  weui-dialog works!
-</p>
+<div class="vux-x-dialog">
+    <div class="weui-mask"></div>
+    <div class="weui-dialog">
+        <free-widget [widget]="widget" *ngFor="let widget of widget?.children"></free-widget>
+    </div>
+</div>
