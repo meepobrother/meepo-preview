@@ -3,6 +3,7 @@ import { CommonModule } from '@angular/common';
 
 import { Components } from './components';
 import { FreeWidgetComponent } from './layouts';
+import { WeuiTextComponent } from './components/other/weui-text/weui-text.component';
 
 @NgModule({
   imports: [
@@ -10,7 +11,8 @@ import { FreeWidgetComponent } from './layouts';
   ],
   declarations: [
     ...Components,
-    FreeWidgetComponent
+    FreeWidgetComponent,
+    WeuiTextComponent
   ],
   exports: [
     ...Components,

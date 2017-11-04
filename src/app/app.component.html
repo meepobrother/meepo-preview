@@ -1,1 +1,1 @@
-<free-widget [widget]="widget" *ngFor="let widget of widgets"></free-widget>
+<free-widget [attr.id]="widget.code" [attr.type]="widget.type" [widget]="widget" *ngFor="let widget of widgets"></free-widget>

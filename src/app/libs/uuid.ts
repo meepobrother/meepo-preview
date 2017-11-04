@@ -1,3 +1,3 @@
 export function uuid() {
-    return Math.random().toString(36).substring(3, 8);
+    return Math.random().toString(36).substring(3, 16);
 }

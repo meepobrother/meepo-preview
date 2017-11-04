@@ -33,6 +33,8 @@ import { WeuiMaskerComponent } from './weui-masker/weui-masker.component';
 import { WeuiQrcodeComponent } from './weui-qrcode/weui-qrcode.component';
 import { WeuiTableComponent } from './weui-table/weui-table.component';
 import { WeuiTimelineComponent } from './weui-timeline/weui-timeline.component';
+import { WeuiTextComponent } from './weui-text/weui-text.component';
+
 
 export const OtherComponents = [
     WeuiButtonTabComponent,
@@ -51,7 +53,8 @@ export const OtherComponents = [
     WeuiMaskerComponent,
     WeuiQrcodeComponent,
     WeuiTableComponent,
-    WeuiTimelineComponent
+    WeuiTimelineComponent,
+    WeuiTextComponent
 ];
 
 export const OtherViews = {
@@ -71,6 +74,7 @@ export const OtherViews = {
     'weui-masker': WeuiMaskerComponent,
     'weui-qrcode': WeuiQrcodeComponent,
     'weui-table': WeuiTableComponent,
-    'weui-timeline': WeuiTimelineComponent
+    'weui-timeline': WeuiTimelineComponent,
+    'weui-text': WeuiTextComponent
 };
 

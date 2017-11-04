@@ -5,7 +5,7 @@ import {
 } from '@angular/core';
 import { VIEWSCOMPONENTS } from '../../components';
 @Component({
-  selector: 'free-widget',
+  selector: 'free-widget, div.free-widget',
   templateUrl: './free-widget.component.html',
   styleUrls: ['./free-widget.component.scss']
 })
@@ -19,8 +19,7 @@ export class FreeWidgetComponent implements OnInit, AfterViewInit, OnDestroy, On
     public compFactoryResolver: ComponentFactoryResolver
   ) { }
 
-  ngOnInit() {
-  }
+  ngOnInit() { }
 
   renderWidgetContainer() {
     if (this.compRef) {

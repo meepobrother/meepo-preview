@@ -15,6 +15,11 @@ import {
     WeuiToastDefault
 } from './dialog';
 
+import {
+    WeuiCellDefault,
+    WeuiTextDefault
+} from './other';
+
 export const MODELS = {
     // forms
     'weui-address': WeuiAddressDefault,
@@ -25,12 +30,19 @@ export const MODELS = {
     'weui-input': WeuiInputDefault,
     'weui-popup-radio': WeuiPopupRadioDefault,
     'weui-slide': WeuiSlideDefault,
+
+    // other
+    'weui-cell': WeuiCellDefault,
+    'weui-text': WeuiTextDefault,
+
     // loading
     'weui-popup': WeuiPopupDefault,
     'weui-loading': WeuiLoadingDefault,
-    'weui-toast': WeuiToastDefault
+    'weui-toast': WeuiToastDefault,
 };
 
 
 export * from './forms';
 export * from './dialog';
+export * from './other';
+

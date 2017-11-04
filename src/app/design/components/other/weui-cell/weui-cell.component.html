@@ -1,3 +1,14 @@
-<p>
-  weui-cell works!
-</p>
+<div class="weui-cells">
+    <div class="weui-cell" [class.weui-cell_access]="widget.isAccess" (click)="onClick()">
+        <div class="weui-cell__hd">
+            <free-widget [attr.type]="wid.type" [attr.type]="wid.type" [widget]="wid" *ngFor="let wid of widget?.header"></free-widget>
+        </div>
+        <div class="weui-cell__bd">
+            <free-widget [attr.type]="wid.type" [attr.type]="wid.type" [widget]="wid" *ngFor="let wid of widget?.body"></free-widget>
+        </div>
+        <div class="weui-cell__ft">
+            <free-widget [attr.type]="wid.type" [attr.type]="wid.type" [widget]="wid" *ngFor="let wid of widget?.footer"></free-widget>
+        </div>
+    </div>
+    <free-widget [attr.type]="wid.type" [attr.type]="wid.type" [widget]="wid" *ngFor="let wid of widget?.children"></free-widget>
+</div>

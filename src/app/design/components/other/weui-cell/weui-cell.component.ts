@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
+import { WeuiCellDefault } from '../../../models/other/weui-cell';
 
 @Component({
   selector: 'weui-cell',
@@ -6,10 +7,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./weui-cell.component.scss']
 })
 export class WeuiCellComponent implements OnInit {
-
+  @Input() widget: WeuiCellDefault = new WeuiCellDefault();
   constructor() { }
 
-  ngOnInit() {
+  ngOnInit() { }
+
+  onClick() {
+
   }
 
 }
+
